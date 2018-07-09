@@ -69,5 +69,5 @@ cloud-deploy:
        password: $PASSWORD
        org: $ORG
        space: $SPACE
-       appname: backing-fulfillment
+       appname: lfbos-backing-fulfillment
        docker_image: lfbos19/backing-fulfillment
