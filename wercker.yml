@@ -53,8 +53,8 @@ build:
 deploy:
  steps:
    - internal/docker-push:
-       username: $USERNAME
-       password: $PASSWORD
+       username: $DOCKER_USERNAME
+       password: $DOCKER_PASSWORD
        cmd: /pipeline/source/backing-fulfillment
        port: "8080"
        tag: latest
@@ -65,7 +65,7 @@ cloud-deploy:
   steps:
    - cng/cf-deploy:
        api: $API
-       user: $USER
+       user: $DUSER
        password: $PASSWORD
        org: $ORG
        space: $SPACE
